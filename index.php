@@ -1,6 +1,29 @@
+<?php 
+include "db.php" ;
+session_start();
+if(isset($_SESSION['USER_ID'])){
+  $user_id = $_SESSION['USER_ID'];
+ 
+  if(isset($_POST['productId'])){
+    $product_id = $_POST['productId'];
+    
+    // Insert the product into the 'cart' table
+    $insert_query = "INSERT INTO cart (user_id, product_id) VALUES ('$user_id', '$product_id')";
+    $result = mysqli_query($con, $insert_query);
+    
+    if($result){
+      echo "Product added to cart successfully.";
+    } else {
+      echo "Failed to add product to cart.";
+    }
+  }
+} else {
+  echo "User ID not found.";
+}
+
+?>
 <!DOCTYPE html>
 
-<?php include "db.php" ?>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -182,14 +205,9 @@
 
    <?php
     $product_query = "select * from products";
-
     $result = mysqli_query($con, $product_query);
-
     $row = mysqli_num_rows($result);
-
-
     if ($row > 0) {
-
     while ($data = mysqli_fetch_assoc($result)) {
 
       $id = $data['id'];
@@ -200,7 +218,7 @@
       $imgFile = "./assets/cards-img/".$img;
 
         echo '<div class="card">';
-        echo '<form method="post" action="cart.php">';
+        echo '<form method="post" action="">';
        echo '<input type="hidden" name="productId" value="' . $id . '">'; 
       echo '
 
@@ -231,9 +249,6 @@
   
   </div>
 </section>
-
-   <!-- ------------footer starts---------- -->
-
 
     <footer class="ui-footer" id="ui-footer">
         <hr>

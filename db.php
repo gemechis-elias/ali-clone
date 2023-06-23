@@ -1,12 +1,12 @@
 <?php
 
 $host = "localhost";
-$user = "myuser";
-$pass = "dechasa1234";
+$user = "root";
+$pass = "";
 $db = "alibaba_clone";
-$con = mysqli_connect($host,$user,$pass,$db);
+$con = mysqli_connect($host, $user, $pass, $db);
 
-// Checking If the connection is obtained
+// Checking if the connection is successful
 if (!$con) {
-  die("Database Connection Error");
+  die("Database Connection Error: " . mysqli_connect_error());
 }
