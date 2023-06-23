@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+}
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 0px 8px rgba(212, 212, 212, 0.4);
+  background-color: #ffffff;
+}
+/* Logo Of header */
+header .logo {
+  display: flex;
+  flex: 2;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  font-size: 3rem;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+header .logo {
+  display: flex;
+  flex: 0;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  font-size: 3rem;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+header {
+  display: flex;
+  flex: 7;
+}
+header .search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 62.2rem;
+  margin: 4px auto auto 4rem;
+  border-radius: 30rem;
+}
+header .search-bar .search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border: 3px solid #ff6a00;
+  margin-top: 1rem;
+  height: 2.9rem;
+  border-radius: 43rem;
+}
+/* Design Search bar */
+header .search-bar .search .search__input {
+  display: flex;
+  flex: 1;
+  padding: 1.2rem 1rem 1.2rem 1em;
+  /* height: 9rem; */
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  right: 0;
+  background: url("/assets/images/icons/camera\ icon.png");
+  background-repeat: no-repeat;
+  background-position: 43rem 50%;
+  background-size: 1.4rem;
+  outline: 0;
+  transition: background 0.3s ease-out, opacity 0.5s ease-out;
+}
+
+.product__btn {
+  height: 40px;
+  border: none;
+  width: 5.93rem;
+  background: url(/asset/images/icons/bottom-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 5rem 50%;
+  background-size: 0.9rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  outline: 0;
+  transition: all 0.4s ease-out;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+/* Design Search Button */
+header .search-bar .search .search__btn {
+  height: 45px;
+  margin-left: -17px;
+  border: none;
+  width: 10rem;
+
+  background: #ff6a00;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+  outline: 0;
+  transition: all 0.4s ease-out;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.bg-logo {
+  width: 0;
+  height: 1.5rem;
+  position: relative;
+  left: 0.5rem;
+}
+
+/* Right Header button */
+
+.right-icons {
+  margin: 0.8rem 0.5rem 1rem 0rem;
+}
+
+.dropbtn1 {
+  background: none;
+  border: none;
+}
+
+.dropbtn1::before {
+  content: "Sign In \A \A   Join Free";
+  white-space: pre;
+  width: 109px;
+  position: absolute;
+  font-size: 12px;
+  margin: 5px 1px 5px 18px;
+}
+
+.dropbtn2::before {
+  content: "Message";
+  width: 39px;
+  position: absolute;
+  font-size: 14px;
+  margin: 35px 7px 0px -4px;
+}
+.dropbtn3::before {
+  content: "Order";
+  width: 28px;
+  position: absolute;
+  font-size: 14px;
+  margin: 31px 8px 0px 0px;
+}
+
+.dropbtn4::before {
+  content: "Cart";
+  width: 30px;
+  position: absolute;
+  font-size: 14px;
+  margin: 35px 7px 0px 4px;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropbtn1 {
+  background: none;
+  border: none;
+  margin: -8px 16px 0px 1px;
+}
+.dropbtn2 {
+  background: none;
+  border: none;
+  margin: 0px 11px 0px 1px;
+  /* font-size: 10px; */
+}
+.dropbtn3 {
+  background: none;
+  border: none;
+  margin: 0px 11px 0px 1px;
+}
+.dropbtn4 {
+  background: none;
+  border: none;
+  margin: 0px 11px 0px 1px;
+}
+.dropdown-profile {
+  margin: 23px 70px 7px 6px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 9px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
+}
+.dropdown-profile > .dropdown-content {
+  height: 45rem;
+  min-width: 20.5rem;
+  left: auto;
+  right: 0;
+  margin-right: -10px;
+}
+.dropdown-content-2 > .dropdown-content {
+  height: 13rem;
+  min-width: 20.5rem;
+  left: auto;
+  right: 0;
+  margin-top: 21px;
+  margin-right: -10px;
+}
+.dropdown-content-3 > .dropdown-content {
+  height: 13rem;
+  min-width: 18.5rem;
+  left: auto;
+  right: 0;
+  margin-top: 21px;
+  margin-right: 2px;
+}
+.dropdown-content-4 > .dropdown-content {
+  height: 3rem;
+  min-width: 22.5rem;
+  left: auto;
+  right: 0;
+  margin-top: 21px;
+  margin-right: 8px;
+}
+
+.order-content {
+  font-size: 14px;
+  padding: 16px;
+}
+.dropdown-content-3 {
+  padding: 4px 1px 12px 20px;
+  font-size: 8px;
+  text-align: left;
+}
+.dropdown-content-4 {
+  padding: 9px 14px 6px 21px;
+  font-size: 8px;
+  text-align: left;
+}
+
+.dropdown-content:before {
+  content: ""; /* Required to display content */
+  position: absolute; /* Sets the position absolute to the top div */
+  top: 12;
+  left: 87%;
+  margin-left: -9px;
+  margin-top: -15px; /* Set margin equal to border px */
+  width: 0;
+  z-index: 1;
+  height: 0;
+  border-bottom: solid 15px #fff; /* Creates the arrow pointing up, to change to a notch instead user border-top */
+  border-left: solid 15px transparent; /* Creates triangle effect */
+  border-right: solid 15px transparent; /* Creates triangle effect */
+}
+.dropdown-content a {
+  /* color: black; */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #ff6a00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn1-content {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+#sign-in-btn {
+  background-color: #ff6a00;
+  color: white;
+}
+.fa {
+  font-size: 24px;
+  border-radius: 4px;
+  padding: 10px;
+
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.3rem;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook,
+.fa-linkedin {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0px 0px 0px 34px;
+}
+.chk-box {
+  text-align: left;
+}
+#chk-boc-content {
+  margin: 0px 0px 0px 20px;
+}
+input[type="checkbox"] {
+  margin: 13px 7px 11px 0px;
+}
+.signin-alibaba-content {
+  text-align: left;
+}
+#signin-alibaba-content {
+}
+#signin-alibaba-content-1 {
+  background-color: black;
+}
+/* navbar */
+
+.msg-box {
+  font-size: 17px;
+  text-align: center;
+  padding: 20px;
+}
+#sign-in-btn2 {
+  background-color: #ff6a00;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px;
+  margin: auto 10px;
+  color: white;
+  width: 5rem;
+  height: 2.4rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  border: none;
+}
+#sign-in-btn-3 {
+  background-color: #ff6a00;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+/* Sign In drop down content */
+#cart-content {
+  font-size: 1rem;
+  padding: 0px 7px 6px 57px;
+}
+
+/* header ends  */

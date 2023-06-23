@@ -1,0 +1,23 @@
+/* ---------footer upper------------ */
+
+/* -----------footer bottom------------ */
+.ui-footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding-bottom: 20px;
+}
+.ui-footer a {
+  color: #999 !important;
+  text-decoration: none !important;
+}
+#ui-footer1,
+#ui-footer2,
+#ui-footer3,
+#ui-footer4 {
+  color: #999;
+  text-decoration: none !important ;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
