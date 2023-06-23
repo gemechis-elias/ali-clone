@@ -1,0 +1,36 @@
+.topnav {
+  overflow: hidden;
+  height: 60px;
+  /* margin-top: 51px; */
+  margin-left: 0;
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: -28px;
+}
+.buttons {
+  margin-left: 6.25rem;
+  /* margin-top: 0.5rem; */
+}
+.topnav a {
+  color: black;
+  float: left;
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  color: #ff6a00;
+}
+
+.topnav-right {
+  float: right;
+  margin-right: 2rem;
+}
+
+.dropdown-content-BuyerCent {
+}
+.BuyerCentbtn {
+}

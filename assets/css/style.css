@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  display: block;
+  background-color: #f2f2f2;
+}
+/* ------------header------- */
+
+/* Starting Navbar */
+
+/* nav  bar along with all contents*/
+nav {
+  display: block;
+  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  z-index: 9;
+  clear: both;
+  position: relative;
+}
+/* ----------logo---- */
+.logo-anc-pos {
+  background-image: url("https://s.alicdn.com/@img/tfs/TB1pDDmmF67gK0jSZPfXXahhFXa-2814-380.png") !important;
+  background-size: contain !important;
+  width: 180px !important;
+  margin-right: 40px !important;
+  background-position-y: center !important;
+  display: inline-block;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  width: 188px;
+  height: 32px;
+}
+/* ----------searchbar--------*/
+
+/* searchbar ends  */
+
+/* horizonal line between header blocks  */
+.hr {
+  background: #e6e7eb;
+  height: 1px;
+  width: 100%;
+}
+
+/* header bottom  */
+
+.header-bottom {
+  height: 40px;
+  line-height: inherit;
+  padding-top: 2px;
+  padding-left: 0;
+  padding-bottom: 2px;
+  box-sizing: content-box;
+}
+
+/* category , slider & category products  */
+
+.flex-col-flr {
+  background-color: yellow;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 6px;
+}
+.catogery-nav-banner {
+  position: relative;
+  width: 1200px;
+  margin: 16px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catogery {
+  width: 220px;
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+  letter-spacing: 0.2px;
+  font-size: 12px;
+  position: relative;
+}
+
+.banner {
+  margin-left: 12px;
+  position: relative;
+}
+
+/* -------------new---------- */
+
+/* side nav  */
+
+/* Fixed sidenav, full height */
+.sidenav {
+  display: flex;
+  flex-direction: column;
+}
+.sidenav button {
+  text-align: left;
+  padding: 10px 2px 17px 14px;
+  background: none;
+  border: none;
+}
+#cate-heading-nav {
+  text-align: left;
+  margin: 2px 0px 12px 11px;
+  font-size: 1.5rem;
+}
+.sidenav button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #ff6a00;
+}
+
+.item-grid-1 {
+  grid-area: menu;
+  height: auto;
+  box-shadow: 0 0px 8px rgb(212 212 212 / 40%);
+}
+.item-grid-2 {
+  height: 17rem;
+  grid-area: slider;
+  box-shadow: 0 0px 8px rgba(212, 212, 212, 0.4);
+}
+#grid-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item-grid-3 {
+  height: auto;
+  grid-area: footer-images;
+  box-shadow: 0 0px 8px rgba(212, 212, 212, 0.4);
+  align-items: center;
+  display: flex;
+}
+
+.grid-container-h {
+  display: grid;
+  /* left and right */
+  /* up and down */
+  grid-template-areas:
+    "menu slider slider slider slider slider"
+    "menu footer-images footer-images footer-images footer-images footer-images";
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 0rem 9rem 1rem 12rem;
+}
+
+.grid-container-h > div {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 1rem;
+}
+.item-grid-3 p {
+  font-size: 1rem;
+}
+/* side nav ends  */
+
+/* miscellaneous styles start */
+
+.vertical {
+  border-left: 1px solid #f2f2f2;
+  height: 32px;
+  margin-left: 10px;
+}
+
+/* miscellaneous styles end  */
+
+/* -----------media------- */
+@media only screen and (max-width: 600px) {
+  .search__input {
+    font-size: 16px !important;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+  }
+  .search__btn {
+    display: none !important;
+  }
+  .search__icon {
+    display: flex !important;
+    color: #fff;
+    align-items: center;
+    flex: 6;
+    position: absolute;
+    right: 5rem;
+    cursor: pointer;
+    height: 80px;
+    line-height: 80px;
+  }
+  .message {
+    position: relative;
+    top: 80px;
+    background: #f3f3f3;
+    padding: 0.5rem 1.5rem;
+    display: block !important;
+    text-align: center;
+  }
+}
